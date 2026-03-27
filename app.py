@@ -141,6 +141,5 @@ If the user is engaging in discussion, try to steer them towards getting in touc
 
 if __name__ == "__main__":
     me = Me()
-    demo = gr.ChatInterface(me.chat)
-    demo.launch(server_name="0.0.0.0", server_port=10000)
+    gr.ChatInterface(me.chat).launch()
     
